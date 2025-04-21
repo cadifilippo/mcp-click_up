@@ -68,7 +68,6 @@ server.tool(
   }
 );
 
-// 3. Listar listas de una carpeta
 server.tool(
   'list_lists',
   'Obtiene las listas de una carpeta en ClickUp',
@@ -84,7 +83,6 @@ server.tool(
   }
 );
 
-// 4. Listar tareas de una lista
 server.tool(
   'list_tasks',
   'Lista las tareas de una lista dados su list_id',
@@ -109,7 +107,6 @@ server.tool(
   }
 );
 
-// 5. Obtener detalle de una tarea
 server.tool(
   'get_task',
   'Devuelve los detalles completos de una tarea',
@@ -125,7 +122,6 @@ server.tool(
   }
 );
 
-// 6. Crear una nueva tarea
 server.tool(
   'create_task',
   'Crea una tarea en una lista',
@@ -150,7 +146,6 @@ server.tool(
   }
 );
 
-// 7. Actualizar estado de una tarea
 server.tool(
   'update_task_status',
   'Cambia el estado (status) de una tarea',
@@ -174,7 +169,6 @@ server.tool(
   }
 );
 
-// 8. Añadir comentario a una tarea
 server.tool(
   'add_comment',
   'Publica un comentario en una tarea',
