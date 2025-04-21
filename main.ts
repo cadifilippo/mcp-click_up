@@ -94,8 +94,17 @@ server.tool(
       headers: { Authorization: CLICK_UP_TOKEN! },
     });
     const data = await res.json();
+    const tasks = data.tasks.map((task: any) => ({
+      id: task.id,
+      custom_id: task.custom_id,
+      name: task.name,
+      status: task.status,
+      creator: task.creator,
+      assignees: task.assignees,
+      watchers: task.watchers,
+    }));
     return {
-      content: [{ type: 'text', text: JSON.stringify(data.tasks, null, 2) }],
+      content: [{ type: 'text', text: JSON.stringify(tasks, null, 2) }],
     };
   }
 );
